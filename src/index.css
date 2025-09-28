@@ -110,10 +110,9 @@ body {
   }
 
   .bento-tilt_1 {
-    @apply relative /*border-hsla  (Tailwind doesn’t let you @apply your own custom utility (special-font b & border-hsla) inside another custom utility.
+    @apply relative border border-white/20 overflow-hidden rounded-md transition-transform duration-300 ease-out;  
+  }  /*border-hsla  (Tailwind doesn’t let you @apply your own custom utility (special-font b & border-hsla) inside another custom utility.
     It only supports @applying core utilities (like border, p-2, bg-red-500).)*/ 
-    border border-white/20 col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out;
-  }
 
   .bento-tilt_2 {
     @apply relative col-span-1 row-span-1 overflow-hidden rounded-md transition-transform duration-300 ease-out;
